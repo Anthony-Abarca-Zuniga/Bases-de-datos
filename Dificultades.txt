@@ -1,0 +1,7 @@
+Me toco el caso de a universidad.
+Materia, Curso, Estudiante, Matricula
+
+Dificultad:
+La creacion de la base de datos por que hice varias pruebas y luego las borraba por que me salian mal, quedaba guardado la base de datos en los documentos del sql
+y no se borraba y no se podia crear 2 archivos con el mismo nombre, luego la creacion de laas consultas para ejecutarlas en el DML solo 1 consulta me servia a llamar 
+el exec entonces las ejecute en el DDL y ahi si me sirvio. Luego a la hora de abrir los querry no los encontraba y me perdi en la estructura de los archivos.
