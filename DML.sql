@@ -1,11 +1,18 @@
-insert into [practica1].[tbCurso]([nombre],[descripcion],[fecha_registro],[estado])
-values ('Sistemas operativos','dificil',GETDATE(),1);
+select * from sys.procedures
+declare @fechaInput datetime = (select GETDATE())
+exec practica1.Curso @nombre = 'Algebra',@descripcion = 'mate',@fecha_registro = @fechaInput,@estado = 1
 
-insert into [practica1].[tbEstudiante]([nombre],[pApellido],[sApellido],[identificacion],[id_matricula])
-values ('Antony','Abarca','Abarca',304810947,1);
 
-insert into [practica1].[tbMateria]([nombre],[nrc],[id_curso])
-values ('Programacion','AFR85',2);
+select * from[practica1].[tbCurso_matricula];
 
-insert into [practica1].[tbMatricula]([tipo_matricula],[fecha_registro],[estado])
-values ('Pago',GETDATE(),1);
+insert into [practica1].[tbMateria]
+values ('Matematica','MAT402',2)
+
+insert into [practica1].[tbMatricula]
+values ('Todo pago',GETDATE(),1)
+
+insert into[practica1].[tbEstudiante]
+values ('Antony','Abarca','Zuniga','304810947',1)
+
+insert into[practica1].[tbCurso_matricula]
+values (2,1)
